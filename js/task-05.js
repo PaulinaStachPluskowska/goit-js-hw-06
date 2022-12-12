@@ -4,7 +4,7 @@ const txtOutput = document.querySelector("#name-output");
 txtInput.addEventListener("input", () => {
   const text = txtInput.value;
 
-  if (text === "") {
+  if (text === "" || text.includes(" ")) {
     txtOutput.textContent = "Anonymous";
     return;
   }

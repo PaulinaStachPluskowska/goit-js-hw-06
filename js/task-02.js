@@ -2,9 +2,10 @@ const ingredients = ["Potatoes", "Mushrooms", "Garlic", "Tomatos", "Herbs", "Con
 
 let list = document.getElementById("ingredients");
 
-ingredients.forEach((item) => {
+ingredients.forEach((el) => {
   let li = document.createElement("li");
-  li.innerText = item;
+  li.innerText = el;
+  li.classList.add("item");
   list.appendChild(li);
 });
 
